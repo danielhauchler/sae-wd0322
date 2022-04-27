@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    a {
+      text-decoration: none
+    }
+
+    a:active {
+      color: green
+    }
+
+    a:visited {
+      color: blueviolet
+    }
+
+    a:hover {
+      text-decoration: underline;
+      cursor: pointer
+    }
+
+    input:focus {
+      background-color: red
+    }
+
+    fieldset:focus-within {
+      border: 1px solid red;
+    }
+
+    input:focus {
+      background-color: aqua;
+    }
+    
+    #number:focus-visible {
+      background-color:deeppink
+    }
+
+
+  </style>
+</head>
+<body>
+  <a href="https://www.google.com">Google</a>
+  
+  <fieldset>
+    <input id="text" type="text">
+    <input id="number" type="number">
+  </fieldset>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /* Quelle: https://www.w3schools.com/css/css_attribute_selectors.asp */
+
+    a[title] {
+      color:cornflowerblue;
+    }
+
+    a[title="Google Link"] {
+      color:cornflowerblue;
+    }
+
+    a[title~="Link"] {
+      color:blueviolet;
+    }
+
+    a[title|="Google Link"] {
+      color:crimson
+    }
+
+    a[title^=Go] {
+      color:darkslategrey
+    }
+
+    a[title$=ink] {
+      color:darkgoldenrod
+    }
+
+    a[title*=oo] {
+      color:brown
+    }
+
+  </style>
+</head>
+<body>
+  <a href="https://google.com" title="Google Link">Google</a>
+  <a href="https://google.com" title="Google Link">Google</a>
+</body>
+</html>
