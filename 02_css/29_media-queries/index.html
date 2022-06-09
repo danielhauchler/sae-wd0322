@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+    }
+    .container {
+      background-color: #fff;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      grid-template-rows: 200px 200px 200px;
+    }
+    div {
+      background-color: aquamarine;
+    }
+
+    @media (min-width: 480px) {
+
+      .container {
+        width: 460px;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, minmax(0, 2fr));
+        grid-template-rows: 200px 200px 200px;
+      }
+
+      div {
+       
+      }
+
+    }
+
+    @media (min-width: 728px) {
+
+      .container {
+        width: 680px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, minmax(0, 3fr));
+        grid-template-rows: 200px 200px 200px;
+      }
+
+    }
+
+    @media (min-width: 960px) {
+
+      .container {
+        width: 940px;
+        margin: 0 auto;
+      }
+
+    }
+
+    @media (orientation: landscape) {
+    }
+
+    @media (orientation: portrait) {
+    }
+
+
+    .mt-4 {
+      margin-top: 4rem
+    }
+
+    .mb-4 {
+      margin-bottom: 4rem
+    }
+
+    .text-regular {
+      font-weight: 300;
+    }
+
+    .text-bold {
+      font-weight: 600;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>

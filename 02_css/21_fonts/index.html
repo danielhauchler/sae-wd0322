@@ -7,11 +7,11 @@
   <title>Document</title>
   
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
   
   
   <style>
 
+    /* online web font google */
     @font-face {
       font-family: 'Font Name XY';
       font-style: normal;
@@ -22,18 +22,31 @@
       unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
     }
 
+    /* physisch lokaler font */
+    @font-face {
+        font-family: "Inter semibold";
+        src: url("fonts/inter-semibold.woff2") format("woff2"), url("fonts/inter-semibold.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+    }
+
     body {
       font-family: 'Open Sans', sans-serif;
     }
 
     h1 {
       font-size: 52px;
+      font-size: 2rem;
+      font-size: 2em;
       color: red;
-      
+      font-family: 'Inter semibold';
+      white-space: normal;
+
       text-transform: uppercase;
       letter-spacing: 5px;
       line-height: 1;
-      font-weight: 600
+      font-weight: 600;
+      text-shadow: 2px 2px 3px rgba(206,89,55,0.94);
     }
   </style>
 </head>

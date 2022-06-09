@@ -7,28 +7,41 @@
   <title>Flex Box</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
+    }
+    .flex-container {
       width: 100vw;
       height: 100vh;
       display: flex;
-      justify-content: space-around;
+      flex-direction: row;
+      justify-content: space-evenly;
       align-items: center;
     }
 
-    div {
+    .flex-container div {
       width: 200px;
       height: 200px;
       background-color: aqua;
-      margin: 5px;
+    }
+
+    #test {
+      align-self: flex-end
     }
   </style>
 </head>
 <body>
   <!-- CSS Tricks -->
   <!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+
   <!-- Flex Froggy -->
   <!-- https://flexboxfroggy.com/#de -->
-  <div></div>
-  <div></div>
-  <div></div>
+
+  <div class="flex-container">
+    <div></div>
+    <div></div>
+    <div id="test"></div>
+  </div>
+
 </body>
 </html>
