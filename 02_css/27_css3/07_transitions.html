@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transitions</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+
+      /* 
+        transition-delay
+        transition-duration
+        transition-property
+        transition-timing-function
+        transition
+      */
+      
+      /* transition-property: width; */
+      /* transition-duration: 2s; */
+      /* transition-delay: 1s; */
+      /* transition-timing-function: ease-in-out; */
+      /* transition: width 2s, background-color 6s; */
+      transition: width 2s 1s ease-in-out;
+    }
+
+    div:hover {
+      width: 500px;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  <div></div>
+</body>
+</html>

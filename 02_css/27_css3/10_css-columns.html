@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Columns</title>
+  <style>
+    #cols {
+      -webkit-column-count: 3;
+      -webkit-column-gap: 10px;
+      -moz-column-count: 3;
+      -moz-column-gap: 10px;
+      column-count: 3;
+      column-gap: 10px;
+    }
+
+    .item {
+      background: white;
+      margin: 0 0 10px 0;
+      padding: 10px;
+      text-align: center;
+      -webkit-column-break-inside: avoid;
+      -moz-column-break-inside: avoid;
+      column-break-inside: avoid;
+    }
+
+    .item img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- https://www.w3schools.com/css/css3_multiple_columns.asp -->
+
+  <div id="cols">
+    <div class="item">
+      <img src="http://placekitten.com/400/700" />
+    </div>
+    <div class="item">
+        <img src="http://placekitten.com/400/450" />
+    </div>
+    <div class="item">
+        <img src="http://placekitten.com/400/600" />
+    </div>
+    <div class="item">
+        <img src="http://placekitten.com/400/300" />
+    </div>
+    <div class="item">
+        <img src="http://placekitten.com/400/900" />
+    </div>
+    <div class="item">
+        <img src="http://placekitten.com/400/650" />
+    </div>
+    <div class="item">
+        <img src="http://placekitten.com/400/700" />
+    </div>
+    <div class="item">
+        <img src="http://placekitten.com/400/300" />
+    </div>
+    <div class="item">
+        <img src="http://placekitten.com/400/500" />
+    </div>
+    <div class="item">
+        <img src="http://placekitten.com/400/800" />
+    </div>
+  </div>
+</body>
+</html>

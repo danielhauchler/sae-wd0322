@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Transforms</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+      transform-origin: 0 0;
+      /* transform: rotate(45deg) */
+      /* transform: scale(2) */
+      /* transform: skew(10deg, 10deg); */
+      /* transform: translate(10px, 10px); */
+      /* transform: rotate(45grad) scale(1.5) skew(10deg, 10deg) translate(100px); */
+
+      transform: rotate3d(1, 1, 1, 45deg);
+      transform: matrix(0.4, 0, 0.5, 1.2, 60, 10);
+    }
+  </style>
+</head>
+<body>
+  <!-- Rotate, Scale, Skew and Translate -->
+  <!-- https://www.w3schools.com/css/css3_3dtransforms.asp -->
+
+  <div></div>
+</body>
+</html>

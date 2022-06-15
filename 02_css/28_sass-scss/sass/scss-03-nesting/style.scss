@@ -1,0 +1,12 @@
+// Variablen
+$font-default: Helvetica, sans-serif;
+$bg-color-primary: #003A40;
+$text-color-primary: #fff;
+
+body {
+  font: 100% $font-default;
+  color: $text-color-primary;
+  background: $bg-color-primary
+}
+
+
